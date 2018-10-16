@@ -117,7 +117,7 @@ static NSString *const APReverseGeocodingCountriesKey  = @"features";
         if (!error) {
             _geoJSON = [parsedJSON copy];
         } else {
-            [NSException raise:@"Cannot parse JSON." format:@"JSON URL - %@\nError:%@", self.url, parsedJSON];
+            [NSException raise:@"Cannot parse JSON." format:@"JSON URL - %@\nError:%@", self.url, error];
         }
     }
     return _geoJSON;
