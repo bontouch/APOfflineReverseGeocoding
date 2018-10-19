@@ -25,11 +25,6 @@
     return [[self alloc] initWithCountryCode:countryCode];
 }
 
-- (instancetype)init
-{
-    return nil;
-}
-
 - (instancetype)initWithCountryCode:(NSString *)countryCode
 {
     self = [super init];

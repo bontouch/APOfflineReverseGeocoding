@@ -28,11 +28,6 @@ static NSString *const APReverseGeocodingCountriesKey  = @"features";
     return [self geocodingWithGeoJSONURL:url];
 }
 
-- (instancetype)init
-{
-    return nil;
-}
-
 + (instancetype)geocodingWithGeoJSONURL:(NSURL *)url
 {
     return [[self alloc] initWithGeoJSONURL:url];
