@@ -49,9 +49,7 @@
  */
 - (APCountry *)geocodeCountryWithCoordinate:(CLLocationCoordinate2D)coordinate;
 
-@end
-
-@interface APReverseGeocoding (Unavailable)
+#pragma mark - Mark init and new as unavailable
 
 - (instancetype)init NS_UNAVAILABLE;
 + (instancetype)new NS_UNAVAILABLE;

@@ -36,9 +36,7 @@
  */
 - (NSDictionary *)build;
 
-@end
-
-@interface APCountryInfoBuilder (Unavailable)
+#pragma mark - Mark init and new as unavailable
 
 - (instancetype)init NS_UNAVAILABLE;
 + (instancetype)new NS_UNAVAILABLE;

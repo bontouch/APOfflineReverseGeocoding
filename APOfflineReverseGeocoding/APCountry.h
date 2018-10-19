@@ -50,9 +50,7 @@
 /* Represents country calendar */
 @property (nonatomic, strong, readonly) NSCalendar *calendar;
 
-@end
-
-@interface APCountry (Unavailable)
+#pragma mark - Mark init and new as unavailable
 
 - (instancetype)init NS_UNAVAILABLE;
 + (instancetype)new NS_UNAVAILABLE;

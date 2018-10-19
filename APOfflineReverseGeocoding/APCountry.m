@@ -16,11 +16,6 @@
     return [[self alloc] initWithGeoDictionary:dictionary];
 }
 
-- (instancetype)init
-{
-    return nil;
-}
-
 - (instancetype)initWithGeoDictionary:(NSDictionary *)dictionary
 {
     self = [super init];

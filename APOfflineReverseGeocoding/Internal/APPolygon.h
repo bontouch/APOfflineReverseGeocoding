@@ -39,6 +39,11 @@
  */
 - (BOOL)containsPoint:(CGPoint)point;
 
+#pragma mark - Mark init and new as unavailable
+
+- (instancetype)init NS_UNAVAILABLE;
++ (instancetype)new NS_UNAVAILABLE;
+
 @end
 
 @interface APPolygon (CoreLocation)
@@ -51,12 +56,5 @@
  *  @return contains location BOOL
  */
 - (BOOL)containsLocation:(CLLocationCoordinate2D)location;
-
-@end
-
-@interface APPolygon (Unavailable)
-
-- (instancetype)init NS_UNAVAILABLE;
-+ (instancetype)new NS_UNAVAILABLE;
 
 @end
